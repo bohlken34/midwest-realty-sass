@@ -1,0 +1,15 @@
+{
+  "name": "libsass-tutorial",
+  "version": "0.0.1",
+  "description": "A libsass tutorial",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Jake Bohlken",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
