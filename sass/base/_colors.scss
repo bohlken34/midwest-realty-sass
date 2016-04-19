@@ -1,0 +1,37 @@
+/*==============================
+=            Colors            =
+==============================*/
+
+.bodyColor {
+	background: $bodyColor;
+}
+
+/*----------  Mobile Colors  ----------*/
+
+
+.mobileGradient1 {
+	@include linear-gradient(to right, $mobileColor1, lighten($mobileColor1, 4%));
+}
+
+.mobileGradient2 {
+	@include linear-gradient(to right, $mobileColor2, lighten($mobileColor2, 4%));
+}
+
+.mobileGradient3 {
+	@include linear-gradient(to right, $mobileColor3, lighten($mobileColor3, 4%));
+}
+
+.mobileGradient4 {
+	@include linear-gradient(to right, $mobileColor4, lighten($mobileColor4, 4%));
+}
+
+.mobileGradient5 {
+	@include linear-gradient(to right, $mobileColor5, lighten($mobileColor5, 4%));
+}
+
+.mobileGradient6 {
+	@include linear-gradient(to right, $mobileColor6, lighten($mobileColor6, 4%));
+}
+
+/*=====  End of Colors  ======*/
+

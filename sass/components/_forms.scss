@@ -1,0 +1,9 @@
+/*=============================
+=            Forms            =
+=============================*/
+.input--material {
+	@include placeholder {
+		color: $placeholderColor;
+	}
+}
+/*=====  End of Forms  ======*/

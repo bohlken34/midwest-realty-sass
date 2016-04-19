@@ -1,0 +1,22 @@
+/*==================================
+=            Typography            =
+==================================*/
+
+.hyphens {
+	@include hyphens(auto);
+}
+
+/*----------  Links  ----------*/
+
+
+.a {
+	@include transition(all .25s ease-out 0s);
+	color: $linkColor;
+	&:hover {
+		color: lighten($linkColor, 8%);
+	}
+}
+
+/*=====  End of Links  ======*/
+
+/*=====  End of Typography  ======*/
