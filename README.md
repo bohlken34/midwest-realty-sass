@@ -1,3 +1,3 @@
-# Classic CSS to SCSS Conversion
+# Midwest Realty Network CSS to SCSS Conversion
 
-A personal project
+Learning to create SASS files from an existing css set.
