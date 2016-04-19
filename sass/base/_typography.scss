@@ -2,6 +2,12 @@
 =            Typography            =
 ==================================*/
 
+/*----------  Utilities  ----------*/
+
+.uppercase {
+	text-transform: uppercase;
+}
+
 .hyphens {
 	@include hyphens(auto);
 }
@@ -10,13 +16,90 @@
 
 
 .a {
-	@include transition(all .25s ease-out 0s);
 	color: $linkColor;
+	outline: 0;
+
+	@include transition(all 0.25s ease-out 0s);
 	&:hover {
 		color: lighten($linkColor, 8%);
 	}
 }
 
 /*=====  End of Links  ======*/
+
+/*----------  Headings  ----------*/
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $headingFont;
+	font-weight: $headingWeight;
+
+	color: $headingColor;
+}
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin: 20px 0;
+}
+
+.h1 {
+	line-height: 36px;
+
+	margin: 0 0 20px;
+
+	@include font-size(30px);
+}
+
+.h2 {
+	line-height: 36px;
+
+	@include font-size(24px);
+}
+
+.h3 {
+	line-height: 22px;
+
+	@include font-size(18px);
+}
+
+.h4 {
+	line-height: 20px;
+
+	@include font-size(16px);
+}
+
+.h5 {
+	line-height: 18px;
+
+	@include font-size(14px);
+}
+
+.h6 {
+	line-height: 18px;
+
+	@include font-size(12px);
+}
+
+.header {
+	font-size: 5vw;
+	line-height: 5.02vw;
+
+	margin-top: 20px;
+}
+
+.teaser {
+	font-size: 1.3vw;
+
+	display: block;
+
+	width: 45vw;
+}
 
 /*=====  End of Typography  ======*/

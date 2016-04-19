@@ -1,7 +1,9 @@
 /*=============================
 =            Forms            =
 =============================*/
-.input--material {
+.input-material {
+	position: relative;
+	margin-bottom: 45px;
 	@include placeholder {
 		color: $placeholderColor;
 	}

@@ -1,0 +1,25 @@
+/*==========================================
+=            Owl Customizations            =
+==========================================*/
+
+.owl-nav {
+	margin-top: 10px;
+	.owl-stage-outer {
+		max-height: 85px;
+	}
+	.owl-stage img {
+		cursor: pointer;
+		@include opacity(0.5);
+		&:hover {
+			@include opacity(1);
+		}
+	}
+	.center img {
+		@include opacity(1);
+	}
+}
+.owl-item {
+	@include transform(translateZ(0));
+}
+
+/*=====  End of Owl Customizations  ======*/

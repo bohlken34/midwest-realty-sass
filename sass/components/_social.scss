@@ -1,0 +1,55 @@
+/*======================================
+=            Social Sharing            =
+======================================*/
+
+.mrn-social {
+	position: fixed;
+	top: 40%;
+	left: 0;
+	&-list {
+		padding-left: 0;
+		list-style: none;
+	}
+	&-list-item {
+		height: 63px;
+	}
+	&-link {
+		@include font-size(12px);
+		margin-right: 2px;
+		padding: 36px 12px 12px 8px;
+		cursor: pointer;
+		@include transition(all 0.1s ease-out);
+		color: #FFFFFF;
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding;
+		box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+		&:hover, &:active {
+			padding: 36px 36px 12px 8px;
+		}
+	}
+	&-twitter {
+		background: $twitterColor;
+		&:hover, &:active {
+			background: darken($twitterColor, 20%);
+		}
+	}
+	&-facebook {
+		background: $facebookColor;
+		&:hover, &:active {
+			background: darken($facebookColor, 20%);
+		}
+	}
+	&-googleplus {
+		background: $googleplusColor;
+		&:hover, &:active {
+			background: darken($googleplusColor, 20%);
+		}
+	}
+	&-pinterest {
+		background: $pinterestColor;
+		&:hover, &:active {
+			background: darken($pinterestColor, 20%);
+		}
+	}
+}
+/*=====  End of Social Sharing  ======*/

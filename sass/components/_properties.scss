@@ -1,0 +1,100 @@
+/*============================================
+=            Properties Container            =
+============================================*/
+.card-container {
+  display: block;
+  
+  width: 100%;
+  margin-bottom: 30px;
+  
+  border-bottom: 2px solid #EAEAEA;
+  background: #FFFFFF
+}
+
+.card-image-link {
+  position: relative;
+  z-index: 555;
+  
+  display: block;
+  
+  @include transition(all 0.25s ease-out 0s);
+}
+.card-image-overlay {
+  position: absolute;
+  
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+  
+  @include transition(all 0.25s ease-out 0s);
+  opacity: 0;
+  background: #FFFFFF;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.card-property-price-tag {
+  @include font-size(22px);
+  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+  padding: 7px 10px;
+  
+  text-decoration: none;
+  
+  color: #FFFFFF;
+  background: #122649;
+}
+.card-property-status {
+  @include font-size(16px);
+  
+  position: absolute;
+  top:0;
+  left:0;
+  
+  padding: 0 6px;
+  
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  background: #122649;
+}
+.card-property-info {
+  box-sizing: border-box;
+  padding: 30px 30px 20px;
+}
+.card-property-title {
+  @include font-size(22px);
+  font-weight:200;
+  line-height: 22px;
+  
+  min-height: 44px;
+  @include mq(768) {
+  	@include mq(979, false, max) {
+  		min-height: 66px;
+  	}
+  }
+  margin: 0 0 20px;
+  
+  text-transform: uppercase;
+}
+.card-property-detail-list {
+  margin: 20px 0 0;
+  padding: 0;
+  
+  list-style: none;
+}
+.card-property-detail-list-item {
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px dotted #E9E9E9;
+}
+#scroll-container {
+	@include mq(719, false, max) {
+		padding: 10px !important;
+	}
+}
+/*=====  End of Properties Container  ======*/
